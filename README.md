@@ -6,7 +6,7 @@
 主要以[QMUI](https://github.com/Tencent/QMUI_Android)封装的一个基础框架。
 写了一个[Gank](http://gank.io/)客户端用来测试此框架。
 
-#### 预览
+#### 封装了些什么？
 
 [如何写一个常用的主界面（ViewPager+Tab）](https://github.com/Theoneee/TheBase/blob/master/app/src/main/java/the/one/demo/ui/fragment/IndexFragment.java)
 
