@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="BaseTheme">
+        <!--主色调-->
+        <item name="config_color">@color/app_color_theme_6</item>
+
+        <!--TopBar主题设置-->
+        <!-- 1. 白色背景-->
+        <!--<item name="QMUITopBarStyle">@style/TopBarWhite</item>-->
+
+        <!-- 2. 非白色的背景-->
+        <!--<item name="QMUITopBarStyle">@style/TopBarStyle</item>-->
+
+        <!-- 3. 渐变色的背景-->
+        <item name="qmui_topbar_bg_drawable">@drawable/main_ripple_bg</item>
+
+    </style>
+
+    <style name="TopBarStyle" parent="TopBarDark">
+        <item name="qmui_topbar_bg_color">@color/app_color_theme_6</item>
+    </style>
+
+    <style name="publish_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">@dimen/dp_10</item>
+        <item name="android:paddingEnd">@dimen/dp_10</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <style name="publish_title_style" parent="publish_style">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+</resources>
