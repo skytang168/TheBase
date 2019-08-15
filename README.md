@@ -10,49 +10,20 @@
 
 [如何写一个常用的主界面（ViewPager+Tab）](https://github.com/Theoneee/TheBase/blob/master/app/src/main/java/the/one/demo/ui/fragment/IndexFragment.java)
 
-![输入图片说明](https://images.gitee.com/uploads/images/2019/0312/155709_cc65ed3d_2286054.png "S90312-151529.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2019/0312/155654_b46fccb5_2286054.png "S90312-151521.png")
 
 
 [如何写一个常用的TitleBar+Tab+ViewPager布局](https://github.com/Theoneee/TheBase/blob/master/app/src/main/java/the/one/demo/ui/fragment/CategoryFragment.java)
 
 ![输入图片说明](https://images.gitee.com/uploads/images/2019/0312/155709_cc65ed3d_2286054.png "S90312-151529.png")
 
-如何写一个常用的数据显示界面
 
-```
-public class GankFragment extends BaseDataFragment<GankBean> {
+[如何写一个常用的数据显示界面](https://github.com/Theoneee/TheBase/blob/master/app/src/main/java/the/one/demo/ui/fragment/CategoryFragment.java)
 
-    @Override
-    protected int setType() {
-         // 类型  list ? grid ? staggered?
-        return isWelfare ? TYPE_STAGGERED : TYPE_LIST;
-    }
+![](https://github.com/Theoneee/TheBase/blob/master/app/src/main/java/the/one/demo/ui/fragment/GankFragment.java")
 
-    @Override
-    protected BaseQuickAdapter getAdapter() {
-        return isWelfare ? new WelfareAdapter() : new GankAdapter();
-    }
 
-    @Override
-    protected void requestServer() {
-        // 获取数据
-        gankPresenter.getData(_mActivity, mType, page);
-    }
-
-    @Override
-    public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
-       
-    }
-
-    @Override
-    public boolean onItemLongClick(BaseQuickAdapter adapter, View view, int position) {
-        return false;
-    }
-}
-```
-
-![](https://images.gitee.com/uploads/images/2019/0312/155923_cdb5f007_2286054.gif "99d6571a-1ce7-4f85-82bf-44dcda06c846.gif")
-
+##### ... 更多请查看demo
 
 
 #### 使用
