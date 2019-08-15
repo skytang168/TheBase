@@ -18,15 +18,23 @@
 ![输入图片说明](https://images.gitee.com/uploads/images/2019/0312/155709_cc65ed3d_2286054.png "S90312-151529.png")
 
 
-[如何写一个常用的数据显示界面]
-(https://github.com/Theoneee/TheBase/blob/master/app/src/main/java/the/one/demo/ui/fragment/GankFragment.java)
+[如何写一个常用的数据显示界面](https://github.com/Theoneee/TheBase/blob/master/app/src/main/java/the/one/demo/ui/fragment/GankFragment.java)
 
 ![输入图片说明](https://images.gitee.com/uploads/images/2019/0312/155923_cdb5f007_2286054.gif "99d6571a-1ce7-4f85-82bf-44dcda06c846.gif")
 
 
 下拉刷新？加载更多？空页面？网络错误页面?  统统都封装好了。
 
-什么？懒加载？只需要返回这个。
+LIST? GRID? STAGGERED? 一句代码
+
+```
+  @Override
+    protected int setType() {
+        return isWelfare ? TYPE_STAGGERED : TYPE_LIST;
+    }
+```
+
+什么？还要懒加载？只需要返回这个。
 
 ```
    @Override
